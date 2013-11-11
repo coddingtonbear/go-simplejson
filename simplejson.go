@@ -97,6 +97,15 @@ func (j *Json) GetIndex(index int) *Json {
 	return &Json{nil}
 }
 
+func (j *Json) SetIndex(index int, val interface{}) {
+	a, err := j.Array()
+	if err == nil {
+		if len(a) > index {
+			a[index] = val
+		}
+	}
+}
+
 func (j *Json) ArrayLength() (int, error) {
 	a, err := j.Array()
 	if err == nil {
