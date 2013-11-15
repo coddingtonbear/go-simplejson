@@ -155,6 +155,10 @@ func (j *Json) Bool() (bool, error) {
 	return false, errors.New("type assertion to bool failed")
 }
 
+func (j *Json) IsNil() bool {
+	return j.data == nil
+}
+
 // String type asserts to `string`
 func (j *Json) String() (string, error) {
 	if s, ok := (j.data).(string); ok {
