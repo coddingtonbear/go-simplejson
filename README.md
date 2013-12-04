@@ -11,3 +11,7 @@ a Go package to interact with arbitrary JSON
 ### Documentation
 
 Visit the docs on [gopkgdoc](http://godoc.org/github.com/bitly/go-simplejson)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/latestrevision/go-simplejson/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
